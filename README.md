@@ -22,7 +22,7 @@ This project automates the provisioning of an Amazon EKS cluster using Terraform
 
 ## Project Setup and Execution
 
-### Step 1: Set Up the VPC
+### Step 1: Write VPC configuration 
 #### Configuration
 The VPC is provisioned using the Terraform AWS VPC module. It includes public and private subnets for EKS usage.
 
@@ -84,7 +84,7 @@ module "myapp-vpc" {
 
 ---
 
-### Step 2: Create the EKS Cluster
+### Step 2: Write EKS Cluster configuration
 #### Configuration
 The EKS cluster and managed node groups are defined using the Terraform AWS EKS module.
 
@@ -117,7 +117,8 @@ module "eks" {
 }
 ```
 
-#### Steps
+### Step 3: Execute Terraform commands to apply the configurations
+
 1. **Reinitialize Terraform**:
    ```bash
    terraform init
@@ -130,7 +131,7 @@ module "eks" {
 
 ---
 
-### Step 3: Deploy NGINX to the Cluster
+### Step 4: Deploy NGINX to the Cluster
 #### Configuration
 The NGINX deployment and service configuration is written in `nginx-config.yaml`.
 
