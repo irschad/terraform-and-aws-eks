@@ -3,7 +3,7 @@
 ## Project Overview
 This project automates the provisioning of an Amazon EKS cluster using Terraform. Additionally, it deploys an NGINX application to the cluster to demonstrate its functionality.
 
-### Technologies Used
+### Technologies
 - **Terraform**: Infrastructure as Code (IaC) tool for managing and provisioning resources.
 - **AWS EKS**: Managed Kubernetes service for deploying containerized applications.
 - **Docker**: Used for containerizing applications.
